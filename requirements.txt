@@ -1,0 +1,40 @@
+# LLM & AI
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-community>=0.2.0
+llama-index>=0.10.0
+openai>=1.0.0
+anthropic>=0.25.0
+
+# Vector Database
+chromadb>=0.4.0
+
+# Quantitative Finance
+backtrader>=1.9.78
+pandas>=2.0.0
+numpy>=1.24.0
+yfinance>=0.2.0
+akshare>=1.10.0
+
+# Technical Analysis
+ta-lib>=0.4.28
+pandas-ta>=0.3.14
+
+# Web & API
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# Data & Visualization
+matplotlib>=3.7.0
+plotly>=5.15.0
+
+# Testing
+pytest>=7.4.0
+
+# Fine-tuning (Project 5)
+transformers>=4.40.0
+peft>=0.10.0
+trl>=0.8.0
+bitsandbytes>=0.43.0
+datasets>=2.19.0
