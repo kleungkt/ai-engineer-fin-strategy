@@ -125,3 +125,4 @@ data/*.csv
 # Experiment tracking
 wandb/
 .venv/
+.claude/
