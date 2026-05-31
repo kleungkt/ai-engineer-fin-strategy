@@ -1,0 +1,77 @@
+{
+  "description": "Sample queries for testing the RAG Financial Knowledge Base",
+  "queries": [
+    {
+      "id": 1,
+      "query": "What are the key risk factors for portfolio diversification?",
+      "category": "risk_management",
+      "expected_sources": ["risk_management", "portfolio_theory"]
+    },
+    {
+      "id": 2,
+      "query": "Explain the difference between fundamental analysis and technical analysis.",
+      "category": "analysis_methods",
+      "expected_sources": ["investment_analysis", "market_research"]
+    },
+    {
+      "id": 3,
+      "query": "What is the Sharpe ratio and how is it used in portfolio evaluation?",
+      "category": "metrics",
+      "expected_sources": ["portfolio_metrics", "performance_evaluation"]
+    },
+    {
+      "id": 4,
+      "query": "What are the current interest rate implications for bond investing?",
+      "category": "fixed_income",
+      "expected_sources": ["fixed_income", "monetary_policy"]
+    },
+    {
+      "id": 5,
+      "query": "How do ESG factors influence investment decisions?",
+      "category": "esg",
+      "expected_sources": ["esg_investing", "sustainable_finance"]
+    },
+    {
+      "id": 6,
+      "query": "What are the tax implications of capital gains in investment accounts?",
+      "category": "taxation",
+      "expected_sources": ["tax_planning", "investment_taxation"]
+    },
+    {
+      "id": 7,
+      "query": "Explain the concept of dollar-cost averaging and its benefits.",
+      "category": "investment_strategy",
+      "expected_sources": ["investment_strategy", "portfolio_management"]
+    },
+    {
+      "id": 8,
+      "query": "What are the main drivers of foreign exchange rate movements?",
+      "category": "forex",
+      "expected_sources": ["forex_analysis", "macroeconomics"]
+    },
+    {
+      "id": 9,
+      "query": "How does inflation affect different asset classes?",
+      "category": "macroeconomics",
+      "expected_sources": ["inflation_analysis", "asset_allocation"]
+    },
+    {
+      "id": 10,
+      "query": "What are the regulatory requirements for institutional investors?",
+      "category": "regulation",
+      "expected_sources": ["regulatory_compliance", "institutional_investing"]
+    },
+    {
+      "id": 11,
+      "query": "Explain the Black-Scholes option pricing model.",
+      "category": "derivatives",
+      "expected_sources": ["options_pricing", "derivatives_theory"]
+    },
+    {
+      "id": 12,
+      "query": "What strategies can be used for hedging currency risk?",
+      "category": "risk_management",
+      "expected_sources": ["hedging_strategies", "forex_management"]
+    }
+  ]
+}

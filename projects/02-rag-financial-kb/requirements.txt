@@ -1,0 +1,15 @@
+chromadb
+openai
+langchain
+langchain-community
+langchain-openai
+pypdf
+beautifulsoup4
+tiktoken
+pydantic
+pydantic-settings
+fastapi
+uvicorn
+python-dotenv
+sentence-transformers
+jieba
