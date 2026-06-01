@@ -119,7 +119,7 @@ cd projects/01-nl-stock-query
 |-----|------|---------|
 | 01 NL Stock Query | ✅ 完成 (223 tests) | Prompt Engineering, 結構化輸出, 回測, K線形態 |
 | 02 RAG Financial KB | ✅ 完成 (110 tests) | RAG, 向量數據庫, 分塊策略, 重排序 |
-| 03 AI Strategy Generator | 🔲 未開始 | Agent, Tool Use, 回測集成 |
+| 03 AI Strategy Generator | ✅ 完成 (128 tests) | Agent, Tool Use, 代碼生成, 參數優化 |
 | 04 Strategy Diagnostics | 🔲 未開始 | Prompt 進階, 金融專業表達 |
 | 05 FinLLM Fine-tune | 🔲 未開始 | LoRA 微調, 數據準備 |
 
