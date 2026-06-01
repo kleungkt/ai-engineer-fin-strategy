@@ -1,0 +1,81 @@
+services:
+  p1-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PROJECT: "01-nl-stock-query"
+    ports:
+      - "8001:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PROJECT=01-nl-stock-query
+    volumes:
+      - ./projects/01-nl-stock-query/src:/app/src
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  p2-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PROJECT: "02-rag-financial-kb"
+    ports:
+      - "8002:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PROJECT=02-rag-financial-kb
+    volumes:
+      - ./projects/02-rag-financial-kb/src:/app/src
+      - ./projects/02-rag-financial-kb/data:/app/data
+    restart: unless-stopped
+
+  p3-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PROJECT: "03-ai-strategy-generator"
+    ports:
+      - "8003:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PROJECT=03-ai-strategy-generator
+    volumes:
+      - ./projects/03-ai-strategy-generator/src:/app/src
+    restart: unless-stopped
+
+  p4-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PROJECT: "04-strategy-diagnostics"
+    ports:
+      - "8004:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PROJECT=04-strategy-diagnostics
+    volumes:
+      - ./projects/04-strategy-diagnostics/src:/app/src
+    restart: unless-stopped
+
+  p5-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PROJECT: "05-finllm-finetune"
+    ports:
+      - "8005:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PROJECT=05-finllm-finetune
+    volumes:
+      - ./projects/05-finllm-finetune/src:/app/src
+    restart: unless-stopped
